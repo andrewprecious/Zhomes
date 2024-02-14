@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+}
+
+header {
+  align-self: start;
+}
+
+footer {
+  align-self: end;
+}
+
+.login-section-content {
+  height: 100vh;
+  /* border: 2px solid red; */
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.login-section-content--right {
+  background-color: var(--color3);
+  display: flex;
+  justify-content: center;
+}
+
+.login-section-content--left {
+  align-self: center;
+}
+
+.login-section-content--left h2 {
+  text-align: center;
+  /* font-size: var(--fontSize7); */
+}
+
+.login-section-content--left form {
+  /* border: 1px solid green; */
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.login-section-content--left form div {
+  /* border: 1px solid red; */
+  width: 100%;
+}
+
+.login-section-content--left form > div > input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: 1px solid rgba(122, 121, 121, 0.898);
+  border-radius: 5px;
+}
+
+#password {
+  position: relative;
+}
+
+.bi-eye {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.login-section-content--left form button {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--color4);
+  cursor: pointer;
+}
+
+.line {
+  width: 90%;
+  height: 2px;
+  background-color: var(--color1);
+  margin: 0 auto;
+  align-self: center;
+}
+
+#forgotPsw {
+  align-self: center;
+}
+
+/* <=1200px */
+@media (max-width: 1200px) {
+  .login-section-content {
+    grid-template-columns: 1fr;
+  }
+
+  .login-section-content--right {
+    display: none;
+  }
+
+  .login-section-content--left form {
+    width: 50%;
+    gap: 20px;
+  }
+
+  .line {
+    width: 50%;
+  }
+}
+
+/* <=500 */
+@media (max-width: 500px) {
+  .login-section-content--left form {
+    width: 90%;
+    gap: 20px;
+  }
+
+  .line {
+    width: 90%;
+  }
+}
+
+.button {
+  font-size: var(--fontSize8);
+}

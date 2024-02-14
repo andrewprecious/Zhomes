@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    min-height: 100vh;
+}
+
+header{
+    align-self: start;
+}
+
+footer{
+    align-self: end;
+}
+
+#contact-section{
+    padding-top: var(--sectionPadding);
+    padding-bottom: var(--sectionPadding);
+}
+
+.contact-section-content{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contact-section-content--left form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.contact-section-content--left form input, .contact-section-content--left form button, .contact-section-content--left form textarea{
+    padding: 10px;
+    outline: none;
+    background-color: aliceblue;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+
+.contact-section-content--left form button{
+    background-color: var(--color4);
+    font-family: var(--fontFamily3);
+    color: var(--color1);
+    font-size: var(--fontSize8);
+}
+
+.contact-section-content--left h2{
+    text-align: center;
+    font-family: var(--fontFamily2);
+}
+
+.contact-section-content--right{
+    overflow: auto;
+}
+
+ /* for icons start */
+ .icons{
+    cursor: pointer;
+    position: fixed;
+    bottom: 10%;
+    right: 10px;
+}
+
+.icons .icon1 img{
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+}
+
+.icons .icon2 img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+/* for icons end */
