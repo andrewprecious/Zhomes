@@ -6,10 +6,10 @@
 2. The contact page 
 3. The home page
 
-### I used javascript for the header to be responsive
-
 ### It was built using the following
 
 - Html
 - Css
 - javascript
+
+### I added the functionality using javasscript
