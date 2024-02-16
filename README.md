@@ -1,6 +1,6 @@
 # This is my first website 
 
-## It has a the following pages
+## It has the following pages
 
 1. The login page
 2. The contact page 
